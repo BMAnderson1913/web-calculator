@@ -3,20 +3,28 @@
 <html>
 
 <head>
-<script src="script.js"></script>
-<link rel="stylesheet" href=" ./main.css" />
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href=" ./main.css" />
 </head>
 
 <body>
-<h1>Click the button to calculate your 2 numbers</h1>
-</br>
-</br>Enter first number:
-<input type="text" id="txt1" name="text1">
-</br>
-</br>Enter second number:
-<input type="text" id="txt2" name="text2">
-<button onclick="myFunction()">Get the sum</button>
-<p id="calc"></p>
+    <h1>Web Calculator</h1>
+
+    <form class="form">
+        <!-- <br>Enter first number: -->
+        <input type="text" id="num1" />
+        <select id="math" <!-- <div class="dropdown-content"> -->
+            <option value="addition"> + </option>
+            <option value="subtract"> - </option>
+            <option value="multiply"> * </option>
+            <option value="divide"> / </option>
+        </select>
+        </div>
+        <!-- <br>Enter second number: -->
+        <input type="text" id="num2" />
+        <input type="button" value="=" onclick="calculate()" />
+    </form>
+    <span id="answer"></span>
 </body>
 
 </html>
